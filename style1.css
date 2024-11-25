@@ -1,7 +1,18 @@
-.home
-{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: xx-large;
+.home {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: xx-large;
+}
+body {
+  text-align: center;
+}
+h3 {
+  font-size: x-large;
+  text-align: left;
+  margin-left: 30%;
+}
+.btn {
+  font-size: xx-large;
+  margin-left: 35%;
 }
