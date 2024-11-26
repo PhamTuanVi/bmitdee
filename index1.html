@@ -38,6 +38,39 @@
       
       Cân nặng: <input type="text" name="cannang" id="cannang"> Kg
     </h3>
+    <script>
+      function tinhBMI() {
+        // Lấy chiều cao và cân nặng từ các ô input
+        var chieuCao = document.getElementById("chieucao").value;
+        var canNang = document.getElementById("cannang").value;
 
+        // Kiểm tra nếu người dùng đã nhập đầy đủ thông tin
+        if (chieuCao === "" || canNang === "") {
+          alert("Vui lòng nhập đầy đủ chiều cao và cân nặng!");
+          return;
+        }
+
+        // Chuyển chiều cao từ cm sang m
+        chieuCao = chieuCao / 100;
+
+        // Tính chỉ số BMI
+        var bmi = canNang / (chieuCao * chieuCao);
+
+        // Hiển thị kết quả BMI
+        var result = document.getElementById("result");
+        result.innerHTML = "Chỉ số BMI của bạn là: " + bmi.toFixed(2);
+
+        // Đưa ra lời khuyên dựa trên BMI
+        if (bmi < 18.5) {
+          result.innerHTML += "<br>Bạn bị thiếu cân.";
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+          result.innerHTML += "<br>Bạn có cân nặng bình thường.";
+        } else if (bmi >= 25 && bmi < 29.9) {
+          result.innerHTML += "<br>Bạn thừa cân.";
+        } else {
+          result.innerHTML += "<br>Bạn bị béo phì.";
+        }
+      }
+    </script>
   </body>
 </html>
