@@ -26,17 +26,23 @@
     >
 
     <h3>
-      Nam: <input type="radio" name="gioitinh" id="Nam" /> Nữ:
-      <input type="radio" name="gioitinh" id="Nu" />
+      Nam: <input type="radio" name="gioitinh" id="Nam"  /> Nữ:
+      <input type="radio" name="gioitinh" id="Nu"class="gioitinh" />
       <br />
       <br />
       Chiều cao: <input type="text" name="chieucao" id="chieucao" /> cm
-      
+
       <br />
-      <input type="button" class="btn" value="Tính kết quả">
+      <input
+        type="button"
+        class="btn"
+        value="Tính kết quả"
+        onclick="tinhBMI()"
+      />
       <br />
-      
-      Cân nặng: <input type="text" name="cannang" id="cannang"> Kg
+
+      Cân nặng: <input type="text" name="cannang" id="cannang" /> Kg
+      <div id="result"></div>
     </h3>
     <script>
       function tinhBMI() {

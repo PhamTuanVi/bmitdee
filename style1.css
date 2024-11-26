@@ -1,18 +1,116 @@
+/* Reset các thuộc tính mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  text-align: center;
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input[type="radio"] {
+  margin: 0 10px;
+  transform: scale(1.2);
+}
+
+input[type="button"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 10px;
+  background-color: #e7f7ff;
+  border-radius: 5px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: xx-large;
+  top: 20px;
+  left: 20px;
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
 }
-body {
-  text-align: center;
-}
-h3 {
-  font-size: x-large;
-  text-align: left;
-  margin-left: 30%;
-}
-.btn {
-  font-size: xx-large;
-  margin-left: 35%;
+
+.home:hover {
+  text-decoration: underline;
 }
