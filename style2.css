@@ -1,10 +1,144 @@
-.home {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: xx-large;
-}
+/* Tổng quan */
 body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #f8f9fa, #e9ecef);
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+h1,
+h2 {
   text-align: center;
-  position: absolute;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+/* Form */
+form {
+  background: #ffffff;
+  padding: 30px 40px;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 500;
+  color: #495057;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Kết quả */
+.result {
+  text-align: center;
+  font-size: 1.5em;
+  color: #27ae60;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+h2,
+h2 + a {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+h2 + a {
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+}
+
+h2 + a:hover {
+  background: #2980b9;
 }
